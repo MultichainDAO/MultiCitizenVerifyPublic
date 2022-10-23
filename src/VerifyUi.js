@@ -228,26 +228,12 @@ const VerifyUi = (props) => {
         {discordUser?'':<a  href={discordauthurl[testing]}  target="_blank" >Connect Discord</a>}
       </p>
       
-      {/* <a href="https://bscscan.com/address/0xe80E5de02eB7E3726eeaB3FeE82E0177c53D64D3" target="_blank">Contract Address</a>
 
-         */}
       <h2>Your VePower: {daiBalance}</h2>
 
       
   
-          {/* <ChainidButtons chainid={chainid} chainidList={chainidList} setChainidList={setChainidList}/> */}
-      {/* <form>
     
-
-        <h2>Receiver: </h2>
-        <input
-          type="text"
-          placeholder="The address you want gas..."
-          value={receiverAddress}
-          onChange={(event) => setreceiverAddress(event.target.value)}
-        />
-        
-      </form> */}
 
       
       {supportedchains.includes(chainid)?
@@ -266,23 +252,11 @@ const VerifyUi = (props) => {
       <p id="status" style={{ color: "white" }}>
         {status2}
       </p>
-        {/* <SendGasStatus chainidTxsuccess={chainidTxsuccess}/> */}
-      {/* <p id="transferstatus1" style={{ color: "black" }}>
-        {}
-      </p>
-      <p id="transferstatus2" style={{ color: "black" }}>
-        {}
-      </p> */}
-
+        
       <p id="chainid">
       {supportedchains.includes(chainid)?`🟢 You're connected to ${getNetworkNamefromChainid(chainid)}`:'🔴 Please connect to Polygon mainnet'}
       </p>
-      
-      {/* <p id="chainidlist">
-        {Array.from(chainidList).join(' ')}
-      </p> */}
-      
-      {/* <div/> */}
+   
     </div>
   );
 };
